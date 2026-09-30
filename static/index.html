@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CodeScribe — Turn Software Into Documentation.</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <i class="blob b1"></i><i class="blob b2"></i>
+    <div class="shell">
+        <aside id="nav">
+            <div class="logo" onclick="go('dashboard')"><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z" />
+                </svg></div>
+            <nav id="menu"></nav>
+            <div class="av">CS</div>
+        </aside>
+        <div id="wrap">
+            <header>
+                <h1 class="big">Turn <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 5C5 5 6 12 3 12c3 0 2 7 5 7M16 5c3 0 2 7 5 7-3 0-2 7-5 7" />
+                        </svg></span> Software<br>Into <span class="chip lime"><svg viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z" />
+                        </svg></span> Documentation</h1>
+                <div class="acts"><select id="proj" aria-label="Current project"></select><label class="sr"
+                        for="theme">Theme</label><select id="theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="system">System</option>
+                    </select>
+                    <button class="dark" onclick="go('create')">+ Create a New Project</button>
+                </div>
+            </header>
+            <nav id="tabs"></nav>
+            <main id="main"></main>
+            <footer class="credit">Made by <b>Absolute Zero</b></footer>
+        </div>
+    </div>
+    <div id="toasts"></div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
